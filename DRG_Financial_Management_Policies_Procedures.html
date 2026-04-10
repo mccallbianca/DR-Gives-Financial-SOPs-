@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desert Rose Gives | Financial Management Policies & Procedures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:wght@300;400;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1A2B6B;
+    --cobalt: #1E4DB7;
+    --sky: #6AAFE6;
+    --sky-light: #A8D4F0;
+    --cream: #F7F6F2;
+    --white: #FFFFFF;
+    --ink: #0F1628;
+    --muted: rgba(15,22,40,0.52);
+    --border: rgba(26,43,107,0.12);
+    --border-strong: rgba(26,43,107,0.22);
+    --rule: rgba(26,43,107,0.08);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  @media print {
+    body { background: white; font-size: 12px; }
+    .no-print { display: none !important; }
+    .page-break { page-break-before: always; }
+    .section-card { box-shadow: none !important; border: 1px solid #ccc !important; }
+  }
+
+  /* ── COVER / HEADER ── */
+  .cover {
+    background: var(--navy);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cobalt), var(--sky), var(--sky-light));
+  }
+  .cover-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 56px 60px 48px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+  .cover-logo {
+    flex-shrink: 0;
+    width: 160px;
+    height: 100px;
+    background: white;
+    border-radius: 6px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .cover-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .cover-text { flex: 1; }
+  .cover-org {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--sky-light);
+    margin-bottom: 10px;
+  }
+  .cover-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .cover-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.62);
+    letter-spacing: 0.02em;
+  }
+  .cover-meta {
+    display: flex;
+    gap: 32px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+  .cover-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .cover-meta-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+  .cover-meta-value {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.82);
+  }
+
+  /* ── TABLE OF CONTENTS ── */
+  .toc-bar {
+    background: var(--cobalt);
+    padding: 0;
+  }
+  .toc-bar-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 60px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .toc-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-right: 12px;
+    white-space: nowrap;
+  }
+  .toc-link {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    padding: 4px 12px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.15);
+    white-space: nowrap;
+    transition: all 0.18s;
+  }
+  .toc-link:hover {
+    background: rgba(255,255,255,0.12);
+    color: white;
+  }
+
+  /* ── MAIN CONTENT ── */
+  .main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 60px 80px;
+  }
+
+  /* ── STATEMENT BLOCK ── */
+  .statement-block {
+    background: var(--white);
+    border: 1px solid var(--border-strong);
+    border-left: 4px solid var(--cobalt);
+    border-radius: 0 8px 8px 0;
+    padding: 36px 40px;
+    margin-bottom: 48px;
+    position: relative;
+  }
+  .statement-icon {
+    position: absolute;
+    top: -14px; left: 36px;
+    background: var(--cobalt);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 12px;
+  }
+  .statement-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
+  .statement-block p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .statement-block p:last-child { margin-bottom: 0; }
+  .statement-block strong { color: var(--navy); }
+
+  /* ── SECTION GROUP ── */
+  .section-group {
+    margin-bottom: 52px;
+  }
+  .section-group-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--navy);
+  }
+  .section-group-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .section-group-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .section-group-subtitle {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* ── POLICY CARD ── */
+  .policy-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .policy-card:hover {
+    box-shadow: 0 4px 16px rgba(26,43,107,0.08);
+  }
+  .policy-card-header {
+    padding: 18px 24px 14px;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .policy-number {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--sky);
+    background: rgba(106,175,230,0.1);
+    border: 1px solid rgba(106,175,230,0.25);
+    padding: 3px 9px;
+    border-radius: 10px;
+    white-space: nowrap;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .policy-question {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.4;
+    flex: 1;
+  }
+  .policy-toggle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(26,43,107,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: var(--navy);
+    flex-shrink: 0;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .policy-card.open .policy-toggle {
+    transform: rotate(180deg);
+    background: var(--cobalt);
+    color: white;
+  }
+  .policy-body {
+    display: none;
+    padding: 20px 24px 24px 24px;
+  }
+  .policy-card.open .policy-body {
+    display: block;
+  }
+  .policy-body p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .policy-body p:last-child { margin-bottom: 0; }
+  .policy-body strong { color: var(--navy); font-weight: 600; }
+
+  /* ── BEST PRACTICE CALLOUT ── */
+  .bp-callout {
+    background: rgba(106,175,230,0.08);
+    border: 1px solid rgba(106,175,230,0.25);
+    border-left: 3px solid var(--sky);
+    border-radius: 0 6px 6px 0;
+    padding: 14px 18px;
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+  .bp-callout-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cobalt);
+    margin-bottom: 4px;
+  }
+
+  /* ── CONTROLS GRID ── */
+  .controls-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .control-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 22px;
+    transition: border-color 0.2s;
+  }
+  .control-item:hover { border-color: var(--sky); }
+  .control-item-icon { font-size: 22px; margin-bottom: 10px; }
+  .control-item-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .control-item-desc {
+    font-size: 12px;
+    line-height: 1.65;
+    color: var(--muted);
+  }
+
+  /* ── SIGNATURE BLOCK ── */
+  .sig-block {
+    background: var(--white);
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    padding: 40px;
+    margin-top: 52px;
+  }
+  .sig-block h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sig-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+  }
+  .sig-item {}
+  .sig-line-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .sig-line {
+    border-bottom: 1px solid var(--ink);
+    height: 36px;
+    margin-bottom: 6px;
+  }
+  .sig-name-line {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .adoption-note {
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--muted);
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    margin-top: 8px;
+  }
+
+  /* ── FOOTER ── */
+  .doc-footer {
+    background: var(--navy);
+    padding: 28px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .doc-footer-left {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+  }
+  .doc-footer-right {
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.04em;
+  }
+  .confidential-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.55);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 12px;
+  }
+
+  /* ── PRINT BUTTON ── */
+  .print-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    background: var(--navy);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(26,43,107,0.3);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 99;
+  }
+  .print-btn:hover {
+    background: var(--cobalt);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(26,43,107,0.35);
+  }
+
+  @media (max-width: 700px) {
+    .cover-inner { flex-direction: column; gap: 24px; padding: 40px 24px 32px; }
+    .toc-bar-inner, .main { padding-left: 24px; padding-right: 24px; }
+    .controls-grid, .sig-row { grid-template-columns: 1fr; }
+    .doc-footer { padding: 24px; flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-inner">
+    <div class="cover-logo">
+      <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCATiBOIDASIAAhEBAxEB/8QAHQABAAEEAwEAAAAAAAAAAAAAAAkCBgcIAQQFA//EAFoQAQABAwICAwkJDAgDBgYBBQABAgMEBREGBxIhMQgTF0FRV2FxkwkiMjeVsdHS4RQVFiNCc3aBkaGzwTM1NlJVcnSyJGKSNENTVPDxGCdEVmOiJUVkgpTC/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAQFAgMGAQf/xABBEQEAAgECAwQGBwcDBAMAAwAAAQIDBBEFITESQVFxE2GBkbHBIjIzNKHR8AYUI0JScuEWJLIVRGKiU4LxktLi/9oADAMBAAIRAxEAPwDTIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWIRO+F3mr5yuMPlnI+ueF3mr5yuMPlnI+uCWJDRX8OfWvXwu81fOVxh8s5H11kgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k=" alt="Desert Rose Gives Logo">
+    </div>
+    <div class="cover-text">
+      <div class="cover-org">Desert Rose Gives · 501(c)(3) Nonprofit Organization</div>
+      <div class="cover-title">Financial Management<br>Policies &amp; Procedures</div>
+      <div class="cover-subtitle">Including Internal Controls Statement · Adopted in accordance with nonprofit best practices</div>
+      <div class="cover-meta">
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Document Type</span>
+          <span class="cover-meta-value">Governance Policy</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Effective Date</span>
+          <span class="cover-meta-value">January 30, 2026</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Review Cycle</span>
+          <span class="cover-meta-value">Annual</span>
+        </div>
+        <div class="cover-meta-item">
+          <span class="cover-meta-label">Approved By</span>
+          <span class="cover-meta-value">Board of Directors</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOC NAV -->
+<div class="toc-bar no-print">
+  <div class="toc-bar-inner">
+    <span class="toc-label">Jump to</span>
+    <a href="#statement" class="toc-link">Internal Controls</a>
+    <a href="#financial" class="toc-link">Financial Management</a>
+    <a href="#personnel" class="toc-link">Personnel Management</a>
+    <a href="#property" class="toc-link">Property Management</a>
+    <a href="#controls-grid" class="toc-link">Controls Summary</a>
+    <a href="#signatures" class="toc-link">Adoption</a>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- INTERNAL CONTROLS STATEMENT -->
+  <div id="statement" class="statement-block" style="margin-top:8px;">
+    <div class="statement-icon">Internal Controls Statement</div>
+    <h2>Statement of Internal Controls</h2>
+    <p>Desert Rose Gives is committed to maintaining sound financial management practices that ensure the responsible stewardship of all funds entrusted to the organization — including government grants, foundation awards, charitable donations, and program income. These internal controls are designed to prevent and detect errors, fraud, and misappropriation; to ensure that financial transactions are properly authorized, recorded, and reported; and to maintain full compliance with all applicable federal, state, and funder requirements.</p>
+    <p><strong>Segregation of Duties:</strong> To the extent practicable given the organization's scale, duties related to authorizing, recording, and reviewing financial transactions are separated among the Founder/Program Manager, the Chief Financial Officer (CFO), and the Operations/Compliance Officer (Mario Hernandez). No single individual has complete control over any financial transaction from initiation to completion.</p>
+    <p><strong>Authorization Controls:</strong> All expenditures require prior written approval from the Program Manager. Expenses exceeding ,500, or involving equipment, require additional CFO and Board review. No unauthorized purchases, commitments, or obligations may be made on behalf of Desert Rose Gives.</p>
+    <p><strong>Documentation and Recordkeeping:</strong> All financial transactions — including purchases, invoices, reimbursements, payroll, and revenue — are documented with source materials, coded to appropriate accounts in QuickBooks, and retained in the organization's secure shared drive managed by Operations. Records are maintained for a minimum of seven years in compliance with IRS guidance and funder requirements.</p>
+    <p><strong>Reconciliation and Review:</strong> Bank accounts are reconciled monthly by the CFO. Financial statements are reviewed quarterly. Grant expenditures are reconciled against approved budgets at minimum monthly. Any discrepancies, errors, or miscodings are identified, documented, corrected, and reported in accordance with this policy.</p>
+    <p><strong>Compliance with Funder Requirements:</strong> All grant-funded expenditures are tracked separately by funding source, consistent with the approved grant budget and allowable cost categories. Desert Rose Gives does not supplant other funding or charge unallowable expenses to grant accounts. All reimbursement requests are prepared with full supporting documentation and submitted by required deadlines.</p>
+    <p><strong>Audit Readiness:</strong> Desert Rose Gives maintains financial records in a state of continuous audit readiness. The organization complies with all annual reporting requirements applicable to its size and funding profile, and cooperates fully with any funder monitoring visits, site reviews, or independent audits.</p>
+    <div class="bp-callout">
+      <div class="bp-callout-label">Best Practice Basis</div>
+      This statement is aligned with the National Council of Nonprofits' Internal Controls Recommendations, SAMHSA Financial Management Standards, OMB Uniform Guidance (2 CFR Part 200) for federal subrecipients, and IRS Form 990 governance best practices for 501(c)(3) organizations.
+    </div>
+  </div>
+
+  <!-- FINANCIAL MANAGEMENT -->
+  <div id="financial" class="section-group">
+    <div class="section-group-header">
+      <div class="section-group-icon">💼</div>
+      <div>
+        <div class="section-group-title">Financial Management</div>
+        <div class="section-group-subtitle">Expenditure controls · Authorization · Coding · Payment · Reimbursement · Revenue</div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-01</span>
+        <span class="policy-question">How are grant expenditures separated in the accounting structure?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives maintains a dedicated chart of accounts in QuickBooks that separates expenditures by funding source, program, and cost category. Each grant is assigned a unique job number or project code within QuickBooks, ensuring that all expenses — personnel, software, supplies, operating costs, and indirect charges — are tracked exclusively against the authorized budget for that funding source.</p>
+        <p>Cost categories align with the approved grant budget narrative: <strong>Personnel</strong> (salaries and fringe for staff time allocable to the grant); <strong>Software and Technology</strong> (platform subscriptions, licenses, and infrastructure directly supporting program delivery); <strong>Operating Expenses</strong> (direct program costs); and <strong>Administrative/Indirect</strong> (limited to allowable overhead consistent with funder caps). No cross-funding of expenses is permitted without prior written authorization from the funder.</p>
+        <p>This structure supports accurate financial reporting, compliance with funder requirements, and the ability to produce grant-specific financial statements at any point during the program period.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Separate project codes per funding source prevent co-mingling, support cost allocation documentation, and are required under 2 CFR §200.302 (Federal Financial Management) for any organization receiving federal pass-through funds.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-02</span>
+        <span class="policy-question">What is the process for receiving permission to incur expenses for a grant program?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>No grant-funded expenditure may be incurred without prior Board authorization and an executed grant award. The process is as follows:</p>
+        <p><strong>Step 1 — Board Approval:</strong> The Board of Directors reviews and approves the program work order and any major purchase orders (including software or technology infrastructure) during or prior to the grant award period. Board approval is documented in meeting minutes.</p>
+        <p><strong>Step 2 — Award Execution:</strong> Once the grant award is fully executed — with a signed agreement, confirmed budget, and designated grant period — the Program Manager is authorized to initiate approved expenditures.</p>
+        <p><strong>Step 3 — Purchase Authorization:</strong> The Program Manager completes a written purchase authorization form prior to any expenditure. This form identifies the item, vendor, cost, grant account code, and budget line being charged.</p>
+        <p><strong>Step 4 — Recordkeeping:</strong> All receipts, invoices, and purchase confirmations are submitted to Operations (Mario Hernandez) immediately upon receipt and entered into QuickBooks. Records are audited and reconciled per this policy.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Pre-authorization controls prevent unallowable costs, protect the organization from audit findings, and are consistent with SAMHSA's Financial Management Standards and the National Council of Nonprofits' expenditure approval framework.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-03</span>
+        <span class="policy-question">How does an employee purchase an item, subscription, or piece of equipment?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives operates a tiered purchase authorization system based on item type and projected cost:</p>
+        <p><strong>Standard Purchases (under ,500):</strong> The employee or staff member submits a written purchase request to the Program Manager identifying the item, vendor, estimated cost, and funding source. Upon written approval from the Program Manager, the purchase is completed either directly by the employee or by the Program Manager. Receipts are submitted to Operations immediately.</p>
+        <p><strong>Software and Subscriptions:</strong> The same written request and Program Manager approval process applies. Subscriptions are documented with term length, renewal terms, and cost per period for budget forecasting.</p>
+        <p><strong>Equipment Purchases:</strong> An additional review step is required. In addition to Program Manager approval, equipment purchases require review by the CFO or Board designee to confirm alignment with the approved budget and grant terms before the purchase is completed.</p>
+        <p><strong>All Purchases Exceeding ,500:</strong> Regardless of category, any item or service exceeding ,500 requires dual approval from both the CFO and the Board of Directors. This threshold ensures appropriate oversight for significant expenditures and protects organizational resources.</p>
+        <p>All receipts and documentation are submitted to Operations for entry into QuickBooks and retained in the organization's compliance records.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Tiered authorization thresholds are recommended by the National Council of Nonprofits and align with OMB Uniform Guidance equipment and supply procurement requirements (2 CFR §§200.313–200.317).
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-04</span>
+        <span class="policy-question">How does the organization determine that an expense is billed to a specific account?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives assigns expenses to specific accounts based on the nature of the expense, its direct relationship to grant activities, and its alignment with the approved budget's cost categories. Account coding decisions follow these principles:</p>
+        <p><strong>Software and Technology:</strong> Classified under the operating account, as these expenses support program delivery and digital infrastructure directly tied to grant activities.</p>
+        <p><strong>Personnel Costs:</strong> Salaries and fringe benefits for the Program Manager, Outreach Coordinator, and any other staff with allocable time are charged to the personnel account, proportionate to the percentage of time spent on grant activities as documented through approved timesheets.</p>
+        <p><strong>Direct Program Costs:</strong> Materials, outreach supplies, participant resources, and other directly allocable costs are coded to the program expense account under the applicable grant project code.</p>
+        <p>All expenses are coded in QuickBooks using the chart of accounts at the time of entry by Operations. The CFO reviews coding during monthly reconciliation and corrects any errors per the re-coding procedure (FM-10). Coding decisions are documented with a brief notation in QuickBooks to support audit review.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Cost allocation methodology should be documented, consistently applied, and capable of withstanding funder scrutiny. This approach aligns with 2 CFR §200.405 (Allocable Costs) and IRS guidance on functional expense reporting for Form 990.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-05</span>
+        <span class="policy-question">How does a bill or invoice get paid?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives applies a dual-review process for all invoice payments to ensure accuracy and accountability:</p>
+        <p><strong>Step 1 — Program Manager Review:</strong> Upon receipt, the invoice is reviewed by the Program Manager to confirm that goods or services were received as described, the amount is consistent with the approved purchase or contract, and the expense is allowable and allocable to the grant budget line.</p>
+        <p><strong>Step 2 — CFO Financial Review and Approval:</strong> The verified invoice is submitted to the CFO, who conducts a financial review — confirming budget availability, account coding, and compliance with grant terms — before authorizing payment.</p>
+        <p><strong>Step 3 — Payment Initiation:</strong> Upon CFO approval, payment is initiated via electronic transfer or check. Payment details are recorded in QuickBooks, the invoice is marked as paid, and the original invoice is filed by Operations.</p>
+        <p><strong>Step 4 — Documentation:</strong> Proof of payment (bank transaction record or check image), the paid invoice, and the approval record are retained together in the organization's compliance files for a minimum of seven years.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          No single person should be able to both approve a purchase and authorize payment. This dual-approval control is a foundational internal control recommended by all major nonprofit governance frameworks and is required for federal subrecipients.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-06</span>
+        <span class="policy-question">Where is payment information retained for future use?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives maintains payment records through a two-layer retention system:</p>
+        <p><strong>QuickBooks (Primary Financial System):</strong> Each payment is recorded in QuickBooks with the paid invoice, proof of payment (bank transaction record or check image), payment date, vendor name, amount, and account code. QuickBooks serves as the authoritative financial ledger for all organizational transactions.</p>
+        <p><strong>Secure Shared Drive (Operations Archive):</strong> A digital copy of each invoice and corresponding payment documentation is stored by Operations (managed by Mario Hernandez) in the organization's internal secure shared drive, organized by grant/funding source and fiscal year. This archive supports compliance reporting, reimbursement requests, and funder or audit access.</p>
+        <p>Records are retained for a minimum of seven years from the close of the relevant grant period or fiscal year, consistent with IRS guidance (26 USC §6501) and OMB Uniform Guidance record retention requirements (2 CFR §200.334).</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Dual-location retention (accounting software + document archive) provides redundancy in the event of system failure, ensures audit readiness, and meets the record retention requirements of federal and state funders.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-07</span>
+        <span class="policy-question">What is the process for submitting a reimbursement request to a funder?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives follows a structured reimbursement process aligned with funder requirements:</p>
+        <p><strong>Step 1 — Documentation Compilation:</strong> The Program Manager compiles all approved expenses incurred during the reimbursement period. This package includes original receipts, paid invoices, proof of payment, timesheet documentation for personnel costs, and any required supporting narratives.</p>
+        <p><strong>Step 2 — CFO Review:</strong> The CFO reviews the complete documentation package for accuracy, allowability, and compliance with the approved grant budget and funder requirements. Any discrepancies are resolved before submission.</p>
+        <p><strong>Step 3 — Reimbursement Form Completion:</strong> The CFO completes the grantor's standardized reimbursement or invoice form (or prepares the equivalent in the funder's required format), attaches all supporting documentation, and prepares the submission package.</p>
+        <p><strong>Step 4 — Submission and Recordkeeping:</strong> The complete request is submitted to the funder by the required deadline. A copy of the full submission — including the reimbursement form and all attachments — is retained in QuickBooks and the organizational archive for tracking and audit documentation.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Reimbursement requests submitted with complete, organized supporting documentation reduce processing delays, demonstrate compliance, and protect the organization in the event of a financial review or audit.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-08</span>
+        <span class="policy-question">How are revenues and reimbursements received and recorded?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>When revenues or reimbursements are received, Desert Rose Gives follows a consistent deposit and recording process:</p>
+        <p><strong>Deposit:</strong> All funds — whether grant reimbursements, donations, or program income — are deposited promptly into Desert Rose Gives' designated organizational bank account. No funds are held in cash or in personal accounts.</p>
+        <p><strong>Recording:</strong> The Operations team records the deposit in QuickBooks, clearly labeling the source (e.g., "WOARF Grant Reimbursement Q1 2026," "Individual Donation," or "Program Income"). Supporting documentation — such as remittance advice, grant payment notices, or donation acknowledgment records — is filed with the corresponding financial record.</p>
+        <p><strong>CFO Review:</strong> The CFO reviews all deposits monthly to confirm accurate source labeling, proper allocation to the correct account or grant code, and reconciliation with expected receivables.</p>
+        <p><strong>Reconciliation:</strong> All revenues are reconciled during monthly financial reviews and included in quarterly financial reporting to the Board and applicable funders.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Prompt deposit, source-coded recording, and monthly reconciliation are fundamental controls that prevent misappropriation, support accurate financial statements, and meet the cash management requirements of 2 CFR §200.305.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-09</span>
+        <span class="policy-question">How does the organization handle travel expense authorization and reimbursement?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives' current program model does not include grant-funded staff travel as an authorized budget line. Accordingly, this policy establishes the framework to be applied should travel expenses become applicable in future funded programs.</p>
+        <p><strong>Authorization:</strong> Any travel on behalf of Desert Rose Gives requires prior written approval from the Program Manager and, if grant-funded, confirmation that travel is an allowable and budgeted expense under the applicable grant agreement.</p>
+        <p><strong>Travel Arrangements:</strong> Where possible, travel arrangements are made in advance using the most cost-effective options. Staff are expected to use organizational resources, not personal credit, unless pre-approved for reimbursement.</p>
+        <p><strong>Reimbursement:</strong> Travel reimbursements are submitted with original receipts, a description of the business purpose, and approval documentation. Mileage reimbursements use the current IRS standard mileage rate. All reimbursements are reviewed by the CFO before payment.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          A written travel policy — even when travel is not currently a program expense — establishes the organizational standard of conduct and prepares the organization for future funded travel requirements under federal and state grants.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">FM-10</span>
+        <span class="policy-question">What happens if an expense is found to have been coded incorrectly?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives treats coding errors as compliance matters that require immediate documentation and correction:</p>
+        <p><strong>Identification:</strong> Miscoded expenses are identified during monthly reconciliation by the Program Manager or CFO, or flagged by Operations during transaction entry review.</p>
+        <p><strong>CFO Review and Correction:</strong> The CFO reviews the expense in question, determines the correct account code based on the chart of accounts and funding source requirements, and makes the corrected journal entry in QuickBooks. No expense may be re-coded without CFO authorization.</p>
+        <p><strong>Documentation:</strong> The corrected entry includes a written notation in QuickBooks explaining the nature of the error, the original coding, the corrected coding, and the date of correction. This audit trail ensures transparency and demonstrates good-faith compliance.</p>
+        <p><strong>Reporting Implications:</strong> If the miscoding affected a previously submitted financial report or reimbursement request, the CFO evaluates whether a corrected report or notification to the funder is required and takes appropriate action.</p>
+        <p><strong>Operations Update:</strong> The Operations team updates any related spreadsheets, reports, or reimbursement tracking documents to reflect the corrected coding.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Documented correction procedures demonstrate organizational integrity and compliance consciousness. Funders expect that errors are identified, corrected, and documented — not concealed. A transparent correction record is a strength, not a liability, in an audit.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PERSONNEL MANAGEMENT -->
+  <div id="personnel" class="section-group page-break">
+    <div class="section-group-header">
+      <div class="section-group-icon">👥</div>
+      <div>
+        <div class="section-group-title">Personnel Management</div>
+        <div class="section-group-subtitle">Hiring · Timesheets · Compensation · Time allocation · Grant compliance</div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">PM-01</span>
+        <span class="policy-question">How does the organization hire an individual?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives operates a project-based staffing model, engaging professionals on a contract basis as funding is secured. The hiring process reflects both the organization's lean structure and its commitment to mission-aligned quality:</p>
+        <p><strong>Need Identification:</strong> When a funded project requires additional capacity, the Founder and Program Manager identify the skills, experience, and scope of work needed for the role.</p>
+        <p><strong>Candidate Sourcing:</strong> Desert Rose Gives draws from a statewide professional network built through the Founder's work across Nevada behavioral health, curriculum development, and program implementation. This network provides a vetted pool of qualified candidates with relevant expertise and mission alignment.</p>
+        <p><strong>Vetting and Selection:</strong> Candidates are evaluated on expertise, prior relevant experience, references, and alignment with the project's scope and funder requirements. Background checks are conducted where required by grant or program terms.</p>
+        <p><strong>Contracting:</strong> Selected individuals are engaged through written contracts clearly defining scope of work, deliverables, compensation rate, timeline, and any grant-specific compliance requirements (e.g., HIPAA, data security, conflict of interest).</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Written contracts with defined deliverables and compliance requirements are essential for project-based nonprofit staff — they establish accountability, protect the organization legally, and satisfy funder documentation requirements.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">PM-02</span>
+        <span class="policy-question">How does the organization complete timesheets and process payroll?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives uses QuickBooks and Paychex as its integrated timesheet and payroll systems:</p>
+        <p><strong>Timesheet Completion:</strong> Project-based staff complete timesheets documenting hours worked, organized by grant activity and project code. Timesheets must be completed at minimum weekly and submitted to the Program Manager for review.</p>
+        <p><strong>Program Manager Review:</strong> The Program Manager reviews timesheets for accuracy, alignment with the approved scope of work, and consistency with the grant's authorized personnel budget. Approved timesheets are submitted to the payroll system.</p>
+        <p><strong>Payroll Processing:</strong> Approved time is entered into Paychex for payroll processing. Payments are issued via direct deposit on the organization's established payroll schedule. Paychex records are synced with QuickBooks for integrated financial tracking.</p>
+        <p><strong>Grant Allocation:</strong> Time charged to grant-funded positions is tracked by project code to ensure that only authorized, allocable personnel costs are expensed to each funding source.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Federal grant regulations (2 CFR §200.430) require that personnel costs charged to grants be supported by records that accurately reflect the work performed. Timesheets organized by activity and grant code satisfy this requirement.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">PM-03</span>
+        <span class="policy-question">How does the organization determine appropriate position and compensation level?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives establishes positions and compensation rates through a structured evaluation process that balances mission needs, market benchmarks, and funding constraints:</p>
+        <p><strong>Role Definition:</strong> The Founder and CFO define the duties, required expertise, and time commitment for each position based on the funded project's scope of work and deliverables.</p>
+        <p><strong>Market Benchmarking:</strong> Compensation is benchmarked against comparable nonprofit positions in Nevada, using publicly available sources including Candid/GuideStar nonprofit compensation data, the Bureau of Labor Statistics Occupational Employment Survey, and sector-specific salary surveys for behavioral health and program management roles.</p>
+        <p><strong>Funding Alignment:</strong> All compensation rates are reviewed for reasonableness, consistency with the approved grant budget, and compliance with any funder-imposed compensation limits or requirements.</p>
+        <p><strong>Board Review:</strong> Compensation for the Founder/Executive Director is reviewed and approved by the Board of Directors to ensure independence and prevent self-dealing, consistent with IRS private benefit and intermediate sanctions requirements.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          IRS Form 990 and most grant funders require documentation that compensation is "reasonable" and comparable to similar roles. Maintaining market benchmark records protects the organization from private benefit concerns and audit challenges.
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">PM-04</span>
+        <span class="policy-question">How does the organization ensure that employee time expensed to a grant is accurate?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Accuracy of time charged to grants is ensured through a multi-layered verification process:</p>
+        <p><strong>Activity-Based Timekeeping:</strong> Staff track time by specific project and grant activity — not simply total hours worked. Timesheets reflect actual hours performed on each grant-funded task, supporting cost allocation documentation.</p>
+        <p><strong>Program Manager Review:</strong> The Program Manager reviews all timesheets against the approved scope of work, confirming that hours recorded correspond to eligible grant activities and authorized personnel budget lines.</p>
+        <p><strong>CFO Verification:</strong> The CFO verifies that time charged to grant accounts matches both the approved timesheet and the allowable activities and personnel costs described in the grant agreement.</p>
+        <p><strong>QuickBooks Cross-Reference:</strong> Payroll entries in QuickBooks are cross-referenced with timesheet records to confirm that only authorized, documented time is expensed to the grant. Any discrepancies are flagged, documented, and resolved before submission in reimbursement requests.</p>
+        <p><strong>Periodic Audit:</strong> Personnel cost allocations are reviewed during monthly grant reconciliation and prior to each reimbursement submission.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          2 CFR §200.430(i) requires that charges to federal awards for salaries and wages be based on records that accurately reflect the work performed. Activity-level timekeeping is the recognized standard for satisfying this requirement.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROPERTY MANAGEMENT -->
+  <div id="property" class="section-group">
+    <div class="section-group-header">
+      <div class="section-group-icon">📦</div>
+      <div>
+        <div class="section-group-title">Property Management</div>
+        <div class="section-group-subtitle">Inventory · Equipment · Asset tracking · Grant-funded property</div>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <div class="policy-card-header" onclick="toggleCard(this)">
+        <span class="policy-number">PP-01</span>
+        <span class="policy-question">How often is inventory reviewed and when was the last inventory completed?</span>
+        <span class="policy-toggle">▾</span>
+      </div>
+      <div class="policy-body">
+        <p>Desert Rose Gives does not maintain a substantial physical inventory, as the organization's programs are primarily digital and service-based. Program-specific materials — such as participant toolkits, educational resources, and outreach supplies — are tracked on a pass-through basis and distributed directly to participants during program delivery.</p>
+        <p><strong>Inventory Review Cycle:</strong> Inventory for each active program is reviewed at project closeout or when final reports are prepared for the funder. Since Desert Rose Gives does not maintain continuous year-round programming across all funding streams simultaneously, inventory is reconciled on a per-program basis rather than a fixed annual schedule.</p>
+        <p><strong>Last Inventory:</strong> The most recent inventory review was completed at the close of the organization's most recently funded program cycle, consistent with closeout reporting requirements.</p>
+        <p><strong>Equipment Tracking:</strong> Any equipment purchased with grant funds (items with a unit cost of ,000 or more, or as defined by the specific grant agreement) is recorded in an equipment log maintained by Operations. The log documents item description, purchase date, cost, funding source, serial number, location, and disposition. Equipment is physically verified annually and at grant closeout.</p>
+        <p><strong>Disposition:</strong> Equipment purchased with grant funds is disposed of in accordance with funder requirements. The organization follows 2 CFR §200.313 for federally funded equipment, which requires funder approval for any disposition of items with a fair market value exceeding ,000.</p>
+        <div class="bp-callout">
+          <div class="bp-callout-label">Best Practice</div>
+          Even for organizations with minimal physical inventory, maintaining documented inventory review procedures and an equipment log for grant-funded assets satisfies funder requirements and demonstrates organizational accountability under OMB Uniform Guidance.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERNAL CONTROLS SUMMARY GRID -->
+  <div id="controls-grid" class="section-group">
+    <div class="section-group-header">
+      <div class="section-group-icon">🔐</div>
+      <div>
+        <div class="section-group-title">Internal Controls Summary</div>
+        <div class="section-group-subtitle">Key controls active across all financial operations</div>
+      </div>
+    </div>
+    <div class="controls-grid">
+      <div class="control-item">
+        <div class="control-item-icon">⚖️</div>
+        <div class="control-item-title">Segregation of Duties</div>
+        <div class="control-item-desc">Authorization (Program Manager), payment approval (CFO), and recordkeeping (Operations) are performed by separate individuals. No single person controls a complete transaction.</div>
+      </div>
+      <div class="control-item">
+        <div class="control-item-icon">✅</div>
+        <div class="control-item-title">Dual Authorization</div>
+        <div class="control-item-desc">All invoices are reviewed by the Program Manager before CFO payment approval. Purchases over ,500 require Board-level authorization. Reimbursements require CFO certification.</div>
+      </div>
+      <div class="control-item">
+        <div class="control-item-icon">📚</div>
+        <div class="control-item-title">Complete Documentation</div>
+        <div class="control-item-desc">Every transaction — purchase, payment, receipt, reimbursement — is documented with source materials in QuickBooks and the organizational archive. Records retained for 7+ years.</div>
+      </div>
+      <div class="control-item">
+        <div class="control-item-icon">🔄</div>
+        <div class="control-item-title">Monthly Reconciliation</div>
+        <div class="control-item-desc">Bank accounts and grant expenditure ledgers are reconciled monthly by the CFO. Discrepancies are documented, investigated, and resolved before financial reports are submitted.</div>
+      </div>
+      <div class="control-item">
+        <div class="control-item-icon">🏷️</div>
+        <div class="control-item-title">Grant-Specific Coding</div>
+        <div class="control-item-desc">Each grant is assigned a unique project code in QuickBooks. All expenses are coded to the correct funding source at entry. Cross-funding and co-mingling are prohibited.</div>
+      </div>
+      <div class="control-item">
+        <div class="control-item-icon">📊</div>
+        <div class="control-item-title">Board Oversight</div>
+        <div class="control-item-desc">The Board of Directors reviews financial statements quarterly. Major expenditures, executive compensation, and grant program approvals require Board authorization.</div>
+      </div>
+      <div class="control-item">
+        <div class="control-item-icon">🕐</div>
+        <div class="control-item-title">Activity-Based Time Tracking</div>
+        <div class="control-item-desc">Personnel costs charged to grants are supported by timesheets reflecting actual hours per grant activity. Program Manager and CFO verify accuracy before payroll and reimbursement.</div>
+      </div>
+      <div class="control-item">
+        <div class="control-item-icon">🔍</div>
+        <div class="control-item-title">Audit Readiness</div>
+        <div class="control-item-desc">All financial records are maintained in continuous audit-ready condition. The organization cooperates fully with funder monitoring visits, site reviews, and independent audits.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADOPTION AND SIGNATURES -->
+  <div id="signatures" class="sig-block">
+    <h3>Policy Adoption and Authorization</h3>
+    <p style="font-size:14px; color:var(--muted); margin-bottom:28px; line-height:1.7;">These Financial Management Policies and Procedures, including the Internal Controls Statement, were reviewed and adopted by the Desert Rose Gives Board of Directors. This document supersedes any prior financial policies and is subject to annual review. All staff, contractors, and volunteers operating under grant-funded programs are required to comply with the policies set forth herein.</p>
+
+    <div class="sig-row">
+      <div class="sig-item">
+        <div class="sig-line-label">Founder &amp; President — Desert Rose Gives</div>
+        <div class="sig-line"></div>
+        <div class="sig-name-line">Bianca D. McCall, LMFT</div>
+        <div class="sig-date-line">Date: <strong>2/13/2026</strong></div>
+      </div>
+      <div class="sig-item">
+        <div class="sig-line-label">Designated Financial Officer</div>
+        <div class="sig-line"></div>
+        <div class="sig-name-line">Steven Ness, LIFT — Designated Financial Officer</div>
+        <div class="sig-date-line">Date: <strong>4/9/2026</strong></div>
+      </div>
+    </div>
+    <div class="sig-row">
+      <div class="sig-item">
+        <div class="sig-line-label">Board Chair</div>
+        <div class="sig-line"></div>
+        <div class="sig-name-line">Rachel Kaplan</div>
+        <div class="sig-date-line">Date: <strong>2/13/2026</strong></div>
+      </div>
+      <div class="sig-item">
+        <div class="sig-line-label">Operations &amp; Compliance Officer</div>
+        <div class="sig-line"></div>
+        <div class="sig-name-line">Mario Hernandez</div>
+        <div class="sig-date-line">Date: <strong>2/13/2026</strong></div>
+      </div>
+    </div>
+
+    <div class="adoption-note">
+      <strong>Retention:</strong> The executed original of this policy document is retained in Desert Rose Gives' permanent governance records and is made available to funders, auditors, and regulatory agencies upon request. A copy is maintained in the organization's grant compliance files. This document is reviewed annually by the Board of Directors and updated as needed to reflect changes in organizational operations, funder requirements, or applicable law.
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="doc-footer">
+  <div class="doc-footer-left">
+    Desert Rose Gives · 5725 S Valley View Blvd Ste 5 PMB 338981 · Las Vegas, Nevada 89118<br>
+    desertrosegives.org · (775) 252-7750 · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0f626c6c6e6363216d666e616c6e4f68626e6663216c6062">[email&#160;protected]</a>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+    <span class="confidential-badge">🔒 Governance Document</span>
+    <div class="doc-footer-right">FM Policies &amp; Procedures · Effective January 30, 2026 · Page 1 of 1</div>
+  </div>
+</div>
+
+<!-- PRINT BUTTON -->
+<button class="print-btn no-print" onclick="window.print()">
+  🖨 Print / Save PDF
+</button>
+
+
+<script>
+// toggleCard: accordion expand/collapse for policy cards
+function toggleCard(header) {
+  var card = header.closest('.policy-card');
+  var isOpen = card.classList.contains('open');
+  document.querySelectorAll('.policy-card.open').forEach(function(c) {
+    c.classList.remove('open');
+  });
+  if (!isOpen) { card.classList.add('open'); }
+}
+
+// Open first card in each section group on load
+window.addEventListener('load', function() {
+  document.querySelectorAll('.section-group').forEach(function(group) {
+    var first = group.querySelector('.policy-card');
+    if (first) { first.classList.add('open'); }
+  });
+
+  // Scroll progress bar
+  var bar = document.createElement('div');
+  bar.id = 'scroll-progress';
+  bar.style.cssText = 'position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#1A2B6B,#5BB8D4);z-index:9999;transition:width 0.1s linear;pointer-events:none;';
+  document.body.appendChild(bar);
+
+  window.addEventListener('scroll', function() {
+    var scrolled = window.scrollY;
+    var total = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
+  });
+
+  // Active TOC link highlight
+  var sections = document.querySelectorAll('[id]');
+  var navLinks = document.querySelectorAll('.toc-link');
+  window.addEventListener('scroll', function() {
+    var current = '';
+    sections.forEach(function(s) {
+      if (window.scrollY >= s.offsetTop - 120) { current = s.id; }
+    });
+    navLinks.forEach(function(a) {
+      a.classList.remove('active');
+      if (a.getAttribute('href') === '#' + current) { a.classList.add('active'); }
+    });
+  });
+});
+</script>
+</body>
+</html>
